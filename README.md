@@ -1,4 +1,4 @@
-<img width="1000" height="638" alt="image" src="https://github.com/user-attachments/assets/2e77a308-3d0c-4bae-baa4-e498b41f58e5" />
+
  Retail Inventory Optimization & Profitability Dashboard 
 
  Project Overview
@@ -30,19 +30,19 @@ Executive_Summary.pdf: High-level business report summarizing findings for stake
   Observation: Electronics have the highest average cost (KES 14.32) but the lowest total profit contribution.
   Recommendation: Implementing a 5-10% markup increase on Electronics is necessary to align this category with the store's 30% margin target.
 3. Inventory Portfolio Risk
-  Observation:** 46% of the inventory consists of "Low Profit" items (earning < KES 4.00 per unit).
-  Recommendation:** Conduct a "Keep or Cut" audit on these 16 items. If they are not driving foot traffic, they should be replaced with "High Profit" items (like the *Mini Basketball Hoop*, which earns KES 16.00/unit).
+  Observation: 46% of the inventory consists of "Low Profit" items (earning < KES 4.00 per unit).
+  Recommendation:Conduct a "Keep or Cut" audit on these 16 items. If they are not driving foot traffic, they should be replaced with "High Profit" items (like the Mini Basketball Hoop, which earns KES 16.00/unit).
 
 
  Technical Skills Demonstrated
  Excel Analytics
 Advanced Pivot Tables:** Used to aggregate data by Category and Product Name.
-Calculated Fields:** Implemented `Sum('Profit') / Sum('Product_Cost2')` to calculate **Weighted Margins**, avoiding the statistical error of "averaging averages."
+Calculated Fields: Implemented `Sum('Profit') / Sum('Product_Cost2')` to calculate Weighted Margins, avoiding the statistical error of "averaging averages."
 Slicers:** Created interactive filters to allow dynamic segmentation by Product Category.
 
  Logic & Formulas
-KPI Development:** used `GETPIVOTDATA` to link dashboard cards to dynamic backend calculations.
-Data Segmentation:** Used nested `IF` statements to create a "Profit Tier" dimension:
+KPI Development: used `GETPIVOTDATA` to link dashboard cards to dynamic backend calculations.
+Data Segmentation: Used nested `IF` statements to create a "Profit Tier" dimension:
     excel
     =IF([@Profit]<4, "Low", IF([@Profit]<8, "Medium", "High"))
     
