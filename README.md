@@ -36,7 +36,7 @@ Executive_Summary.pdf: High-level business report summarizing findings for stake
 
  Technical Skills Demonstrated
  Excel Analytics
-Advanced Pivot Tables:** Used to aggregate data by Category and Product Name.
+Advanced Pivot Tables: Used to aggregate data by Category and Product Name.
 Calculated Fields: Implemented `Sum('Profit') / Sum('Product_Cost2')` to calculate Weighted Margins, avoiding the statistical error of "averaging averages."
 Slicers:** Created interactive filters to allow dynamic segmentation by Product Category.
 
